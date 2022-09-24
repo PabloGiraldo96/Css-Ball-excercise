@@ -1,0 +1,149 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color:rgb(187, 187, 187);
+	position: absolute;
+	top:250px;
+	left: 600px;
+}
+
+h1{
+	color:rgba(3, 7, 8, 0.541);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	position: absolute;
+	display: inline; 
+	top:-110px;
+	left: 450px;
+}
+
+.cont{
+	background: #7F849F;
+	box-shadow:  31px 31px 72px #6c7087,
+             -31px -31px 72px #9298b7;
+	height: 500px;
+	width: 480px;
+	border-radius: 25px;
+	display: flex;
+	justify-content: flex-start;
+	position: absolute;
+	left: -300px;
+	top: -150px;
+		animation: float 4s infinite;
+}
+
+.cont1{
+	background: #7F849F;
+	box-shadow:  31px 31px 72px #6c7087,
+             -31px -31px 72px #9298b7;
+	height: 500px;
+	width: 520px;
+	border-radius: 25px;
+	display: flex;
+	justify-content: flex-start;
+	position: absolute;
+	left: -700px;
+	top: 390px;
+	transform: skew(90deg, 50deg);
+	transform: scale(0.5) translate(-100%, -100%);
+}
+
+
+.ball {
+	background-color: #e2f4ff;
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	position: relative;
+	top: 270px;
+	left: 115px;
+	z-index: 0;
+	animation: float 10s infinite;
+}
+
+.visor {
+background-color: #274156;
+height: 80px;
+width: 150px;
+border-radius: 25px;
+position: relative;
+	top: 280px;
+	left: -51px;
+	box-shadow:  11px 12px 15px #9397b3,
+             -11px -11px 18px #c7cdf2;	
+	animation: float 10s infinite;
+}
+
+
+.eye{
+position: relative;
+top:290px;
+left: -165px;
+height: 45px;
+width: 21px;
+background-color: rgb(127, 237, 245);
+border-radius: 10px;
+	animation: float 10s infinite;
+}
+
+.eye-1 {
+position: relative;
+top:290px;
+left: -125px;
+height: 45px;
+width: 21px;
+background-color:rgb(127, 237, 245);
+border-radius: 10px;
+	animation: float 10s infinite;
+}
+
+.mouth {
+background-color: #274156;
+width: 75px;
+height: 16px;
+border-radius:
+52% 48% 49% 51% / 21% 14% 86% 79%;
+position: relative;	
+  top: 390px;
+  right: 200px;
+		animation: float 10s infinite;
+}
+
+
+
+/*
+.ball-1 {
+	background-color: rgb(8, 8, 8);
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: relative;
+	top: 250px;
+	left: 330px;
+	/*animation: bounce 0.7s infinite;*/
+/*
+.ball-2 {
+	background-color: rgb(8, 8, 8);
+	height: 70px;
+	width: 50px;
+	border-radius: 50%;
+	position: relative;
+	top: 270px;
+	left: 215px;
+	animation: bouncef 0.8s infinite;
+}*/	
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-40px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
