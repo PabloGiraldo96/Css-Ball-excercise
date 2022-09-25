@@ -17,18 +17,18 @@ h1{
 }
 
 .cont{
-	background: #7F849F;
-	box-shadow:  31px 31px 72px #6c7087,
-             -31px -31px 72px #9298b7;
-	height: 500px;
-	width: 480px;
-	border-radius: 25px;
-	display: flex;
 	justify-content: flex-start;
 	position: absolute;
 	left: -300px;
 	top: -150px;
-		animation: float 4s infinite;
+	background: #7F849F;
+	box-shadow:  31px 31px 72px #6c7087,
+             -31px -31px 72px #9298b7;
+	height: 40rem;
+	max-width: 50rem;
+	border-radius: 25px;
+	display: flex;
+		animation: float 7s infinite;
 }
 
 .cont1{
@@ -109,30 +109,6 @@ position: relative;
 }
 
 
-
-/*
-.ball-1 {
-	background-color: rgb(8, 8, 8);
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	position: relative;
-	top: 250px;
-	left: 330px;
-	/*animation: bounce 0.7s infinite;*/
-/*
-.ball-2 {
-	background-color: rgb(8, 8, 8);
-	height: 70px;
-	width: 50px;
-	border-radius: 50%;
-	position: relative;
-	top: 270px;
-	left: 215px;
-	animation: bouncef 0.8s infinite;
-}*/	
-
-
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -147,3 +123,21 @@ position: relative;
 		transform: translatey(0px);
 	}
 }
+@media (min-width: 576px) {
+	.cont{
+	margin: 0 auto;
+	justify-content: flex-start;
+	position: absolute;
+	left: -300px;
+	top: -150px;
+	background: #7F849F;
+	box-shadow:  31px 31px 72px #6c7087,
+        -31px -31px 72px #9298b7;
+	height: 40rem;
+	max-width: 50rem;
+	border-radius: 25px;
+	display: flex;
+	animation: float 7s infinite;
+}
+}
+
