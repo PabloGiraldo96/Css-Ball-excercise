@@ -123,7 +123,7 @@ position: relative;
 		transform: translatey(0px);
 	}
 }
-@media (min-width: 576px) {
+@media (min-width: 375px) {
 
 body{
 	margin: 0;
